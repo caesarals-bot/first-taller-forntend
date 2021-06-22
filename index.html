@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer</title>
+    <link rel="shortcut icon" type="image/icon" href="./img/chess_board_icon_187661.ico"/>
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-switch ">
+        <label class="switch">
+            <input class="toggle" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <header>
+        <h1>Diseñador <span> Freelancer</span></h1>
+    </header>
+    <!-- finaliza el header -->
+
+    <!-- navegacion -->
+    <div class="nav-bg">
+        <h2 class="name">Cesar Londoño</h2>
+        <nav class="navegacion-principal contenedor">
+            
+            <a href="/">Inicio</a>
+            <a href="#sobremi">Sobre Mi</a>
+            <a href="#servicios">Mis Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+
+    <section class="hero">
+
+        <div class="contenido-hero">
+            <h2 class="titulo">Ideas y Proyectos</h2>
+            <div class="ubicacion">
+                <img src="./img/localizacion.png" alt="localizacion">
+
+                <p>Santiago, Chile</p>
+            </div>
+
+            <a class="boton" href="#contacto">Contactar</a>
+        </div>
+        <!-- contenido-hero -->
+    </section>
+
+    <section class="container" id="sobremi">
+        <div class="container-main-img">
+            <div class=" container-image">
+                <img src="./img/fotografo.png" alt="">
+            </div>
+            <div class="text">
+                <h3 class="subtitle">Sobre mi</h3>
+                <p>Soy cesar londoño, soy fotógrafo aficionado, trabajé 10 años en una casa fotográfica donde aprendí a revelar y a imprimir fotografías, con el tiempo empecé a capturar imágenes.
+                    En la actualidad la fotografía la practico como uno de mis hobbies.</p> Siempre que tengo la oportunidad de lograr una imagen pues tomo mi celular y disparo.
+                    <p>Hoy vivo en la ciudad de Santiago de chile, termine mis estudios de técnico superior en informática, un curso de proceso de análisis de datos con el Sence y en el momento actualizo conocimiento en desarrollo frontend.
+                    Además de esto tengo conocimiento de SASS, REACT, JS básicos.</p>
+                    <p>Este un trabajo para la nivelación del curso de desarrollo front-end</p>
+                    
+        </div>
+    
+    </section>
+    <!-- main -->
+    <main class="contenedor sombra" id="servicios">
+        <h2>Mis Servicios</h2>
+
+        <div class="servicios" >
+            
+            <section class="servicio">
+                <h3>Diseño Web</h3>
+                <div class="iconos">
+                    <img src="" alt="">
+                </div>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quo praesentium rerum asperiores sapiente mollitia aut facere reprehenderit commodi! Reiciendis cupiditate hic in reprehenderit nisi itaque distinctio enim labore vitae.
+                </p>
+            </section>
+            <section class="servicio">
+                <h3>Aplicaciones Wed</h3>
+                <div class="iconos">
+                    <img src="" alt="">
+                </div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam minus exercitationem molestias autem quo repellendus. Cupiditate provident dolores id, hic corporis consequatur labore asperiores ipsa odio eveniet, optio quam cumque.
+                </p>
+            </section>
+            <section class="servicio">
+                <h3>E-Commerce</h3>
+                <div class="iconos">
+                    <img src="" alt="">
+                </div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam minus exercitationem molestias autem quo repellendus. Cupiditate provident dolores id, hic corporis consequatur labore asperiores ipsa odio eveniet, optio quam cumque.
+                </p>
+            </section>
+
+        </div>
+            <!-- finaliza servicios -->
+
+            <section id="contacto" class="container-form">
+                <h2>Contacto</h2>
+                <form class="formulario" action="">
+                    <fieldset>
+                        <legend>Contactanos llenado todos los Campos</legend>
+                        <div class="contenedor-campos">
+
+                            <div class="campo">
+                                <label for="nombre">Nombre</label>
+                                <input class="input-text"  id="nombre" type="text" placeholder="Tu Nombre" required="true">
+                            </div>
+
+                            <div class="campo">
+                                <label for="telefono">Telefono</label>
+                                <input class="input-text"  id="telefono" type="text" placeholder="Tu Numero" required="true">
+                            </div>
+
+                            <div class="campo">
+                                <label for="correo">Correo</label>
+                                <input class="input-text"  id="correo" type="email" placeholder="Tu Email" required="true">
+                            </div>
+
+                            <div class="campo">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="input-text" required="true"></textarea>
+                            </div>
+                        </div>
+                        <!-- Campos -->
+                        <div class="alinear-derecha flex">
+                            <input type="submit" class="boton w-sm-100" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+       
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos Reservados</p>
+    </footer>
+    <script src="js/storage.js"></script>
+</body>
+</html>
