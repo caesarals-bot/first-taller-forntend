@@ -6,6 +6,7 @@ const storage = window.localStorage;
 
 const check = document.querySelector('.toggle');
 const body = document.querySelector('body');
+const a = document.querySelectorAll('a');
 
 let oscuro = Boolean(storage.getItem('oscuro'));
 
