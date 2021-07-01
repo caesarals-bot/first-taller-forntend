@@ -388,6 +388,10 @@ body {
   cursor: pointer;
 }
 
+a {
+  color: #000000;
+}
+
 /* tipografia**/
 h1 {
   font-size: 3.8rem;
@@ -501,12 +505,8 @@ input:checked + .slider::before {
   color: #dfd7d7;
 }
 
-.a-change {
-  color: #685d5d;
-}
-
-.a-color {
-  color: #000000;
+.change-color a, .change-color p {
+  color: #dfd7d7;
 }
 
 /* Titulos */
@@ -520,10 +520,6 @@ header span {
 }
 
 .nav-bg {
-  margin-bottom: 1rem;
-}
-
-.nav-bg .nav-bg__principal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,47 +527,36 @@ header span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.nav-bg .nav-bg__name {
-  font-family: 'Caveat', cursive;
-  font-size: 5rem;
-  margin: 2rem 0 0;
+.nav-bg__principal {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: visibility .3s ease-in-out, opacity .5s linear;
+          transform: visibility .3s ease-in-out, opacity .5s linear;
 }
 
-.nav-bg__principal--a {
-  /* modificador */
-  display: block;
-  text-align: center;
-  color: #000000;
+.nav-bg__principal a {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 700;
   padding: 1rem;
 }
 
-.nav-bg__principal--a:hover {
+.nav-bg__principal a:hover {
   color: cyan;
   background: black;
+  border-radius: 1rem;
 }
 
-.cancel-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.menu-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 3rem;
+.nav-bg__name {
+  font-family: 'Caveat', cursive;
+  font-size: 5rem;
+  margin: 2rem 0 0;
 }
 
 @media (min-width: 768px) {
@@ -580,12 +565,19 @@ header span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
   }
   .nav-bg .nav-bg__principal {
     /* Elemento */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -593,12 +585,12 @@ header span {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    gap: 2rem;
     padding: 2rem;
+    visibility: visible;
+    opacity: 1;
   }
   .nav-bg .nav-bg__name {
     /*elemento*/
-    color: #000000;
     margin-left: 10rem;
   }
   .nav-bg__principal--a:hover {
@@ -606,12 +598,32 @@ header span {
     background: #685d5d;
     border-radius: .5rem;
   }
-  .cancel-btn {
+}
+
+/* menu hamburguesa*/
+.mobile-menu {
+  font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
     display: none;
   }
-  .menu-btn {
-    display: none;
-  }
+}
+
+.mostrar {
+  visibility: visible;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner {
