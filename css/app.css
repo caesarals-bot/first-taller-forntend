@@ -392,6 +392,10 @@ h3 {
   text-align: center;
 }
 
+img {
+  width: 100%;
+}
+
 /* cambio de tema */
 .container-switch {
   /*Bloque*/
@@ -685,6 +689,14 @@ header span {
 }
 
 /* sobre mi */
+.personal {
+  background-color: #000000;
+}
+
+.personal h2, .personal h3, .personal p {
+  color: #ffffff;
+}
+
 .personal__container {
   margin: 0 auto;
   width: 60%;
@@ -737,6 +749,16 @@ header span {
   padding: 1rem;
 }
 
+.servicios .servicio {
+  padding: 1rem;
+  border-width: 1rem;
+  border-color: #685d5d;
+}
+
+.servicios .servicio img {
+  border-radius: 1rem;
+}
+
 @media (min-width: 768px) {
   .servicios {
     display: -ms-grid;
@@ -746,6 +768,7 @@ header span {
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
     margin: 2rem;
+    padding: 1rem;
   }
 }
 

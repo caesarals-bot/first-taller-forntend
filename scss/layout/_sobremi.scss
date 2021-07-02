@@ -1,4 +1,12 @@
 /* sobre mi */
+.personal{
+    background-color: $negro;
+
+    h2,h3,p {
+        color: $white;
+    }
+}
+
 .personal__container {
     margin:0 auto;
     width: 60%;
